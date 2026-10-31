@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วิธีจ้างเขียนโปรแกรม Automation ดึงข้อมูลเว็บและสคริปต์ Excel แบบงานไวให้คุ้มค่า</title>
+    <meta name="description" content="เจาะลึกวิธีจ้างเขียนโปรแกรม Automation ดึงข้อมูลจากเว็บไซต์ (Web Scraping) และสคริปต์ Excel VBA/Python อย่างมืออาชีพ ให้ได้งานเร็ว ลดข้อผิดพลาด และคุ้มค่าแก่การลงทุนที่สุด">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Kanit', sans-serif; background-color: #f8fafc; color: #1e293b; }
+        .hero-gradient { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); }
+        .glass-nav { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        h1, h2, h3, h4 { color: #0f172a; line-height: 1.3; }
+        p { line-height: 1.8; margin-bottom: 1.5rem; color: #334155; }
+        .cta-button { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .cta-button:hover { transform: translateY(-2px); box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.4); }
+        .prose a { color: #4f46e5; text-decoration: underline; font-weight: 600; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+    </style>
+</head>
+<body class="antialiased">
+    <nav class="sticky top-0 z-50 glass-nav border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
+            <a href="#" class="font-bold text-2xl bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-violet-600 truncate max-w-[200px] md:max-w-md">
+                วิธีจ้างเขียนโปรแกรม Automation ดึงข้อมูลเว็บและสคริปต์ Excel แบบงานไวให้คุ้มค่า
+            </a>
+            <div class="hidden lg:flex gap-8">
+                <a href="#home" class="text-sm font-semibold text-slate-600 hover:text-indigo-600 transition-colors uppercase tracking-widest">หน้าแรก</a><a href="#services" class="text-sm font-semibold text-slate-600 hover:text-indigo-600 transition-colors uppercase tracking-widest">เนื้อหา</a><a href="#knowledge" class="text-sm font-semibold text-slate-600 hover:text-indigo-600 transition-colors uppercase tracking-widest">ความรู้เพิ่มเติม</a><a href="#testimonials" class="text-sm font-semibold text-slate-600 hover:text-indigo-600 transition-colors uppercase tracking-widest">รีวิว</a><a href="#contact" class="text-sm font-semibold text-slate-600 hover:text-indigo-600 transition-colors uppercase tracking-widest">Contact</a>
+            </div>
+            <a href="https://fastwork.co/user/game.gkt" class="hidden md:block bg-indigo-600 text-white px-6 py-2.5 rounded-full text-sm font-bold cta-button">
+                จ้างงานบน Fastwork
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="py-16 scroll-mt-20 border-b border-slate-100 last:border-0">
+    <div class="max-w-4xl mx-auto px-4">
+        <img src="https://image.pollinations.ai/prompt/A_professional_cinematic_shot_of_a_modern_office_workplace%2C_a_high-end_laptop_on_a_wooden_desk_showing_complex_Python_code_for_web_scraping_and_a_dashboard_of_Excel_data_visualization._In_the_background%2C_a_blurred_professional_expert_is_analyzing_data_on_multiple_monitors._Bright%2C_clean%2C_corporate_lighting_with_a_focus_on_productivity_and_high-technology_automation%2C_4k_resolution.?width=1024&height=600&nologo=true" onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1024&q=80'" alt="วิธีจ้างเขียนโปรแกรม Automation ดึงข้อมูลเว็บและสคริปต์ Excel แบบงานไวให้คุ้มค่า" class="w-full h-auto rounded-xl shadow-2xl mb-8" loading="lazy">
+
+        <h2 class="text-3xl font-bold text-slate-900 mb-6 text-center lg:text-left">
+            วิธีจ้างเขียนโปรแกรม Automation ดึงข้อมูลเว็บและสคริปต์ Excel แบบงานไวให้คุ้มค่า
+        </h2>
+
+        <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+            ในยุคที่ข้อมูลคือขุมทรัพย์สำคัญของธุรกิจ <span class="text-indigo-600 font-bold">Data-Driven</span> การทำงานแบบ Manual หรือการใช้แรงงานคนมานั่งคีย์ข้อมูลลงตาราง Excel แบบเดิมๆ กลายเป็นเรื่องที่ล้าหลังและทำให้คุณเสียโอกาสทางการแข่งขันไปอย่างมหาศาล
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+            <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-md">
+                <h3 class="text-xl font-semibold text-slate-800 mb-4 flex items-center">
+                    <span class="bg-indigo-100 p-2 rounded-lg mr-3">🚀</span>
+                    ทำไมต้องเริ่มใช้ Automation?
+                </h3>
+                <ul class="space-y-3 text-slate-600">
+                    <li class="flex items-start">
+                        <span class="text-green-500 mr-2">✓</span>
+                        ประหยัดเวลาทำงานจากหลายชั่วโมงเหลือเพียงไม่กี่นาที
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-500 mr-2">✓</span>
+                        ลดความผิดพลาด (Human Error) ในการพิมพ์และจัดการข้อมูล
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-500 mr-2">✓</span>
+                        ดึงข้อมูลคู่แข่งและราคาสินค้าได้แบบ Real-time
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-md">
+                <h3 class="text-xl font-semibold text-slate-800 mb-4 flex items-center">
+                    <span class="bg-indigo-100 p-2 rounded-lg mr-3">📊</span>
+                    หัวใจของการจ้างงานที่คุ้มค่า
+                </h3>
+                <p class="text-slate-600 leading-relaxed">
+                    การจะได้รับงานที่ "ไว" และ "มีคุณภาพ" เริ่มต้นจากการสื่อสารความต้องการที่ชัดเจน ตั้งแต่ขั้นตอนการ <span class="text-indigo-600 font-bold">Web Scraping</span> ไปจนถึงการเขียน <span class="text-indigo-600 font-bold">Excel Automation</span> เพื่อให้ระบบทำงานแทนคุณได้อย่างสมบูรณ์แบบ
+                </p>
+            </div>
+        </div>
+
+        <div class="bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-r-xl">
+            <h3 class="text-xl font-semibold text-slate-800 mb-2">เป้าหมายของบทความนี้</h3>
+            <p class="text-slate-700">
+                เราจะช่วยให้คุณเข้าใจเทคนิคการบรีฟงานเพื่อจ้าง 
+                <a href="https://fastwork.co/user/game.gkt" target="_blank" class="text-indigo-600 font-bold hover:underline decoration-2">
+                    บริการรับเขียนโปรแกรม Automation ดึงข้อมูลเว็บและจัดการข้อมูล Excel
+                </a> 
+                ให้ได้งานตรงใจ ใช้งานได้จริง และคุ้มค่ากับงบประมาณที่จ่ายไปมากที่สุด พร้อมเคล็ดลับการเลือกผู้เชี่ยวชาญที่จะช่วยเปลี่ยนงานซับซ้อนให้เป็นเรื่องง่ายในพริบตา
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="py-16 scroll-mt-20 border-b border-slate-100 last:border-0">
+    <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-slate-900 mb-6">กลยุทธ์การจ้างเขียนโปรแกรม Automation ดึงข้อมูลเว็บและ Excel ให้คุ้มค่าและได้งานไว</h2>
+        
+        <p class="text-slate-600 mb-8 leading-relaxed">
+            ในยุคที่ข้อมูลคือขุมทรัพย์ การมัวนั่ง Copy-Paste ข้อมูลจากเว็บไซต์ลง Excel ทีละบรรทัดคือการเสียเวลาที่แพงที่สุด <span class="text-indigo-600 font-bold">การจ้างเขียนโปรแกรม Automation</span> จึงไม่ใช่แค่การซื้อซอฟต์แวร์ แต่คือการลงทุนซื้อ "เวลา" คืนมาให้กับธุรกิจของคุณ เพื่อให้ได้งานที่แม่นยำ 100% ในระยะเวลาที่สั้นที่สุด คุณจำเป็นต้องรู้วิธีการจ้างงานอย่างเป็นระบบ
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+            <div class="p-6 bg-white border border-slate-200 rounded-xl shadow-md">
+                <h3 class="text-xl font-semibold text-slate-800 mb-4">1. Web Scraping Automation</h3>
+                <p class="text-slate-600 text-sm mb-4">เน้นการดึงข้อมูลจากเว็บไซต์จำนวนมาก เช่น ราคาสินค้าคู่แข่ง, รายชื่อที่พัก, หรือข่าวสาร โดยใช้บอทเข้าถึงข้อมูลแทนคน</p>
+                <ul class="space-y-2 text-sm text-slate-700">
+                    <li>✓ ดึงข้อมูลจากเว็บ Dynamic (JavaScript)</li>
+                    <li>✓ ข้ามระบบป้องกันการดึงข้อมูล (Anti-Bot)</li>
+                    <li>✓ จัดเก็บข้อมูลเข้า Database หรือ CSV</li>
+                </ul>
+            </div>
+            <div class="p-6 bg-white border border-slate-200 rounded-xl shadow-md">
+                <h3 class="text-xl font-semibold text-slate-800 mb-4">2. Excel & Report Automation</h3>
+                <p class="text-slate-600 text-sm mb-4">เน้นการจัดการข้อมูลที่ดึงมาได้ หรือข้อมูลในองค์กรมาจัดทำรายงาน วิเคราะห์ผล หรือเชื่อมต่อ API ระหว่างซอฟต์แวร์</p>
+                <ul class="space-y-2 text-sm text-slate-700">
+                    <li>✓ เขียนสคริปต์ VBA หรือ Python จัดการไฟล์</li>
+                    <li>✓ รวมไฟล์ Excel หลายร้อยไฟล์ในคลิกเดียว</li>
+                    <li>✓ สร้าง Dashboard อัตโนมัติ</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3 class="text-xl font-semibold text-slate-800 mb-4">ขั้นตอนการบรีฟงาน (Briefing Template) เพื่อลดการแก้งาน</h3>
+        <p class="text-slate-600 mb-4">ปัญหาที่ทำให้งานล่าช้าที่สุดคือ "บรีฟไม่ชัดเจน" หากคุณต้องการงานไวและคุ้มค่า ควรใช้เทมเพลตการบรีฟดังนี้:</p>
+        <div class="bg-slate-50 p-6 rounded-xl border-l-4 border-indigo-500 mb-10">
+            <ul class="space-y-3 text-slate-700">
+                <li><strong>Source:</strong> ระบุ URL เว็บไซต์เป้าหมาย หรือไฟล์ต้นทาง (ควรมีไฟล์ตัวอย่าง)</li>
+                <li><strong>Fields:</strong> ระบุหัวข้อข้อมูลที่ต้องการ เช่น ชื่อสินค้า, ราคา, ส่วนลด, คะแนนรีวิว</li>
+                <li><strong>Format:</strong> รูปแบบไฟล์ปลายทางที่ต้องการ (Excel, Google Sheets, JSON, SQL)</li>
+                <li><strong>Frequency:</strong> งานครั้งเดียว (One-off) หรือต้องรันเป็นประจำทุกวัน (Schedule)</li>
+            </ul>
+        </div>
+
+        <h3 class="text-xl font-semibold text-slate-800 mb-4">เทคนิคการเลือกผู้รับเหมา: ดูที่ Portfolio และ Stack</h3>
+        <p class="text-slate-600 mb-6">
+            อย่าเลือกเพียงเพราะราคาถูกที่สุด แต่ให้ดูที่ <span class="text-indigo-600 font-bold">Tech Stack</span> ที่เขาใช้ หากเป็นงานดึงข้อมูลเว็บระดับสูง ควรเลือกคนที่มีความเชี่ยวชาญในการ <a href="https://fastwork.co/user/game.gkt" target="_blank" class="text-indigo-600 underline font-semibold hover:text-indigo-800 transition-colors">จ้างเขียนโปรแกรมดึงข้อมูลเว็บไซต์อัตโนมัติ</a> ที่รองรับเทคโนโลยีอย่าง Selenium, Puppeteer หรือ Playwright ซึ่งช่วยให้บอททำงานได้เสถียรและแนบเนียนเหมือนคนใช้งานจริง
+        </p>
+
+        <h3 class="text-xl font-semibold text-slate-800 mb-4">โครงสร้างราคา: แบบ Project-based vs Hourly rate</h3>
+        <p class="text-slate-600 mb-6">
+            - <span class="font-bold">Project-based (รายโปรเจกต์):</span> เหมาะสำหรับงานที่มีขอบเขตชัดเจน (Fixed Scope) เช่น "ดึงข้อมูลจากเว็บ A จำนวน 10,000 รายการ" ข้อดีคือคุมงบประมาณได้ชัวร์<br>
+            - <span class="font-bold">Hourly rate (รายชั่วโมง):</span> เหมาะกับงานวิจัยพัฒนาหรือโปรเจกต์ที่ต้องปรับเปลี่ยนตลอดเวลา แนะนำให้หา <a href="https://fastwork.co/user/game.gkt" target="_blank" class="text-indigo-600 underline font-semibold hover:text-indigo-800 transition-colors">บริการพัฒนาระบบ Automation ด้วย Python และ Excel</a> ที่คิดราคาตามความซับซ้อนของงานเพื่อให้เกิดความยุติธรรมทั้งสองฝ่าย
+        </p>
+
+        <div class="bg-indigo-50 p-8 rounded-2xl mb-10">
+            <h3 class="text-xl font-bold text-indigo-900 mb-4">การตรวจสอบงาน (UAT) ให้ชัวร์ก่อนจ่ายเงิน</h3>
+            <p class="text-slate-700 mb-4">ก่อนรับมอบงานเพื่อความมั่นใจ 100% คุณควรตรวจสอบดังนี้:</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="flex items-start">
+                    <span class="text-indigo-500 mr-2">✓</span>
+                    <span class="text-sm text-slate-600">สุ่มเช็คข้อมูล 5-10% เทียบกับหน้าเว็บจริงว่าตรงกันหรือไม่</span>
+                </div>
+                <div class="flex items-start">
+                    <span class="text-indigo-500 mr-2">✓</span>
+                    <span class="text-sm text-slate-600">ทดสอบรันสคริปต์ในกรณีที่มีข้อมูลผิดปกติ (Error Handling)</span>
+                </div>
+                <div class="flex items-start">
+                    <span class="text-indigo-500 mr-2">✓</span>
+                    <span class="text-sm text-slate-600">ตรวจสอบความเร็วในการประมวลผลว่ายอมรับได้ไหม</span>
+                </div>
+                <div class="flex items-start">
+                    <span class="text-indigo-500 mr-2">✓</span>
+                    <span class="text-sm text-slate-600">รูปแบบไฟล์ (Format) ถูกต้องตามที่คุยในบรีฟตอนต้น</span>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-slate-600 leading-relaxed italic">
+            สุดท้ายนี้ หากคุณต้องการลดขั้นตอนการลองผิดลองถูก การปรึกษา <a href="https://fastwork.co/user/game.gkt" target="_blank" class="text-indigo-600 underline font-semibold hover:text-indigo-800 transition-colors">ฟรีแลนซ์เขียนสคริปต์จัดการข้อมูลมืออาชีพ</a> จะช่วยให้คุณประหยัดทั้งเงินและเวลา พร้อมได้ระบบที่ทำงานได้อย่างยั่งยืนและปรับแต่งได้ในอนาคต เปลี่ยนงาน Routine ที่น่าเบื่อให้เป็นระบบอัตโนมัติวันนี้ เพื่อโฟกัสกับสิ่งที่สำคัญกว่าในธุรกิจของคุณ
+        </p>
+    </div>
+</section>
+
+<section id="knowledge" class="py-16 scroll-mt-20 border-b border-slate-100 last:border-0">
+    <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-slate-900 mb-6">เจาะลึกความรู้ก่อนเริ่มโปรเจกต์ Automation: สิ่งที่คุณต้องรู้เพื่อความคุ้มค่าสูงสุด</h2>
+        <p class="text-lg text-slate-600 mb-10 leading-relaxed">การจ้างงาน <span class="text-indigo-600 font-bold">Web Scraping</span> หรือการเขียนสคริปต์จัดการข้อมูล ไม่ใช่เพียงแค่การสั่งให้โปรแกรมทำงานได้ แต่คือการสร้างสินทรัพย์ดิจิทัลที่ช่วยประหยัดเวลาและเพิ่มกำไรให้ธุรกิจในระยะยาว นี่คือคู่มือฉบับย่อที่จะช่วยให้คุณคุยกับโปรแกรมเมอร์รู้เรื่องและได้งานที่ตรงใจ</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+            <!-- Tooling Card -->
+            <div class="bg-white p-6 rounded-xl shadow-md border border-slate-100 hover:shadow-lg transition-shadow">
+                <h3 class="text-xl font-semibold text-slate-800 mb-4">1. เครื่องมือยอดนิยมในยุค 2024</h3>
+                <ul class="space-y-3 text-slate-600">
+                    <li><span class="text-indigo-500">✓</span> <span class="font-semibold">Python:</span> หัวใจสำคัญของการดึงข้อมูล ใช้ Selenium สำหรับเว็บที่ซับซ้อน และ Beautiful Soup สำหรับความรวดเร็ว</li>
+                    <li><span class="text-indigo-500">✓</span> <span class="font-semibold">Pandas:</span> เครื่องมือจัดการโครงสร้างข้อมูลที่ทำหน้าที่เสมือน Excel บนสเตียรอยด์</li>
+                    <li><span class="text-indigo-500">✓</span> <span class="font-semibold">Power Query:</span> ทางเลือกที่ยอดเยี่ยมสำหรับผู้ที่ต้องการจัดการข้อมูลใน Excel โดยไม่ต้องเขียนโค้ดซับซ้อน</li>
+                </ul>
+                <p class="mt-4 text-sm">การเลือกใช้ <a href="https://fastwork.co/user/game.gkt" target="_blank" class="text-indigo-600 font-bold underline">ผู้เชี่ยวชาญด้านการเขียนโปรแกรม Python สำหรับดึงข้อมูล</a> จะช่วยให้คุณประหยัดเวลาในการจัดการ Error ที่คาดไม่ถึง</p>
+            </div>
+
+            <!-- Legal Card -->
+            <div class="bg-white p-6 rounded-xl shadow-md border border-slate-100 hover:shadow-lg transition-shadow">
+                <h3 class="text-xl font-semibold text-slate-800 mb-4">2. กฎหมายและจริยธรรมที่ต้องระวัง</h3>
+                <p class="text-slate-600 mb-3">การดึงข้อมูลต้องทำอย่างชาญฉลาดเพื่อไม่ให้เกิดปัญหาทางกฎหมาย:</p>
+                <ul class="space-y-2 text-slate-600">
+                    <li><span class="text-indigo-500">✓</span> <span class="font-semibold">PDPA:</span> หลีกเลี่ยงการดึงข้อมูลส่วนบุคคลที่ระบุตัวตนได้โดยไม่ได้รับอนุญาต</li>
+                    <li><span class="text-indigo-500">✓</span> <span class="font-semibold">Term of Service:</span> เคารพข้อตกลงการใช้งานเว็บไซต์ต้นทางเพื่อป้องกันการโดนแบน IP</li>
+                    <li><span class="text-indigo-500">✓</span> <span class="font-semibold">Rate Limiting:</span> ตั้งค่าหน่วงเวลาการดึงข้อมูลไม่ให้กระทบต่อ Server ของต้นทาง</li>
+                </ul>
+            </div>
+
+            <!-- Security Card -->
+            <div class="bg-white p-6 rounded-xl shadow-md border border-slate-100 hover:shadow-lg transition-shadow">
+                <h3 class="text-xl font-semibold text-slate-800 mb-4">3. ความปลอดภัยของข้อมูล</h3>
+                <p class="text-slate-600 mb-4">เมื่อต้องแชร์สิทธิ์ให้โปรแกรมเมอร์ <span class="text-indigo-600 font-bold">ความปลอดภัยคืออันดับหนึ่ง</span>:</p>
+                <div class="space-y-2 text-sm text-slate-600">
+                    <div class="flex items-start bg-slate-50 p-2 rounded">
+                        <span class="mr-2">🛡️</span>
+                        <span>ใช้ระบบ <span class="font-bold">Sandbox</span> หรือฐานข้อมูลชุดทดสอบในการพัฒนา</span>
+                    </div>
+                    <div class="flex items-start bg-slate-50 p-2 rounded">
+                        <span class="mr-2">🛡️</span>
+                        <span>สร้าง User เฉพาะกิจที่มีสิทธิ์จำกัด (Least Privilege)</span>
+                    </div>
+                    <div class="flex items-start bg-slate-50 p-2 rounded">
+                        <span class="mr-2">🛡️</span>
+                        <span>เปลี่ยนรหัสผ่านทันทีหลังจากงานโปรเจกต์เสร็จสิ้น</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Maintenance Card -->
+            <div class="bg-white p-6 rounded-xl shadow-md border border-slate-100 hover:shadow-lg transition-shadow">
+                <h3 class="text-xl font-semibold text-slate-800 mb-4">4. การบำรุงรักษา Code ระยะยาว</h3>
+                <p class="text-slate-600 mb-4">เว็บไซต์มีการเปลี่ยนแปลงโครงสร้างตลอดเวลา ดังนั้นการเขียนโค้ดที่ยืดหยุ่นจึงสำคัญ:</p>
+                <ul class="space-y-2 text-slate-600 italic">
+                    <li>"โปรแกรมเมอร์ที่ดีจะเขียนโค้ดให้แก้ใขง่าย (Scalable Code) เผื่อกรณีปุ่มกดเปลี่ยนสี หรือเมนูย้ายตำแหน่ง"</li>
+                </ul>
+                <p class="mt-4 text-sm">เลือกใช้ <a href="https://fastwork.co/user/game.gkt" target="_blank" class="text-indigo-600 font-bold underline">บริการรับทำสคริปต์ Excel และระบบ Automation</a> ที่มีการรับประกันงานและคู่มือการใช้งานที่ชัดเจน</p>
+            </div>
+        </div>
+
+        <div class="bg-indigo-50 border-l-4 border-indigo-600 p-6 rounded-r-xl mb-10">
+            <h3 class="text-lg font-bold text-indigo-900 mb-2">💡 Pro Tip สำหรับเจ้าของธุรกิจ</h3>
+            <p class="text-indigo-800 leading-relaxed">
+                การจ้างงานแบบเหมาอาจจะดูประหยัดในช่วงแรก แต่การจ้างผู้เชี่ยวชาญที่มี <span class="text-indigo-600 font-bold">Standard Logging</span> (ระบบเก็บประวัติการทำงาน) จะช่วยให้คุณรู้ได้ทันทีว่าโปรแกรมหยุดทำงานเพราะอะไร และแก้ไขได้ภายในไม่กี่นาที แทนที่จะต้องเริ่มนับหนึ่งใหม่ทั้งหมด
+            </p>
+        </div>
+
+        <div class="text-center">
+            <a href="https://fastwork.co/user/game.gkt" class="inline-block bg-indigo-600 text-white px-8 py-4 rounded-full font-bold shadow-lg hover:bg-indigo-700 hover:scale-105 transition-all my-8">จ้างงานบน Fastwork</a>
+            <p class="text-slate-500 text-sm italic">ร่วมงานกับฟรีแลนซ์มืออาชีพ การันตีงานไว ปลอดภัย และคุ้มค่าทุกบาทที่จ่าย</p>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials" class="py-16 scroll-mt-20 border-b border-slate-100 last:border-0">
+    <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-slate-900 mb-6 text-center">พิสูจน์ผลลัพธ์จริง: เสียงตอบรับจากผู้ใช้บริการ Automation</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            <!-- Case Study 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-md border border-slate-100 flex flex-col h-full">
+                <div class="flex items-center mb-4">
+                    <span class="bg-indigo-100 text-indigo-600 p-2 rounded-full mr-3">✓</span>
+                    <h3 class="text-xl font-semibold text-slate-800 mb-0">Case Study: ลดเวลาจาก 8 ชม. เหลือ 5 นาที</h3>
+                </div>
+                <p class="text-slate-600 leading-relaxed">
+                    เปลี่ยนงานคีย์ข้อมูลที่แสนน่าเบื่อจากการจ้างพนักงานนั่งกรอกข้อมูล <span class="text-indigo-600 font-bold">8 ชั่วโมงต่อวัน ให้เหลือเพียงการรันสคริปต์ 5 นาที</span> ช่วยให้ธุรกิจประหยัดต้นทุนแรงงานและได้ข้อมูลที่แม่นยำ 100% โดยไม่ต้องกังวลเรื่องความผิดพลาดจากการพิมพ์ (Human Error)
+                </p>
+            </div>
+
+            <!-- Case Study 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-md border border-slate-100 flex flex-col h-full">
+                <div class="flex items-center mb-4">
+                    <span class="bg-indigo-100 text-indigo-600 p-2 rounded-full mr-3">✓</span>
+                    <h3 class="text-xl font-semibold text-slate-800 mb-0">เจ้าของธุรกิจออนไลน์: ชนะคู่แข่งด้วยข้อมูล</h3>
+                </div>
+                <p class="text-slate-600 leading-relaxed">
+                    ความประทับใจจากการเลือก <a href="https://fastwork.co/user/game.gkt" target="_blank" class="text-indigo-600 font-bold hover:underline">จ้างเขียนโปรแกรม Automation และสคริปต์ดึงข้อมูล</a> เพื่อใช้เช็คราคาสินค้าคู่แข่งแบบ Real-time ช่วยให้ปรับราคาขายได้ทันท่วงที ทะยานสู่ยอดขายอันดับ 1 ใน Marketplace ได้อย่างรวดเร็ว
+                </p>
+            </div>
+
+            <!-- Case Study 3 (Full Width on Large Screens) -->
+            <div class="bg-white p-6 rounded-xl shadow-md border border-slate-100 md:col-span-2">
+                <div class="flex items-start">
+                    <span class="bg-indigo-100 text-indigo-600 p-2 rounded-full mr-3 mt-1">✓</span>
+                    <div>
+                        <h3 class="text-xl font-semibold text-slate-800 mb-2">ระบบจัดการสต็อกอัจฉริยะด้วย Excel Script</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            ตัวอย่างความสำเร็จจากการใช้ <span class="text-indigo-600 font-bold">สคริปต์ Excel จัดการสต็อกสินค้าอัตโนมัติ</span> ที่เชื่อมโยงข้อมูลจากหลายช่องทางเข้าด้วยกัน ช่วยให้สรุปยอดขายและตัดสต็อกได้ทันที ลดขั้นตอนการทำงานที่ซับซ้อนให้กลายเป็นเรื่องง่ายเพียงแค่คลิกเดียว
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-16 scroll-mt-20 border-b border-slate-100 last:border-0">
+    <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-slate-900 mb-6 text-center">เริ่มเปลี่ยนงาน Manual เป็นระบบอัตโนมัติวันนี้</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+            <!-- Contact Card -->
+            <div class="bg-white p-6 rounded-xl shadow-md border border-slate-100 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-semibold text-slate-800 mb-4">ช่องทางการติดต่อผู้เชี่ยวชาญ</h3>
+                    <p class="text-slate-600 mb-4">พร้อมดูแลทุกโปรเจกต์ <span class="text-indigo-600 font-bold">Automation ดึงข้อมูลเว็บ</span> และสคริปต์ Excel ทุกรูปแบบ</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-slate-700">
+                            <span class="mr-2 text-indigo-500 font-bold">✓</span> Line Official: @AutomationExpert
+                        </li>
+                        <li class="flex items-center text-slate-700">
+                            <span class="mr-2 text-indigo-500 font-bold">✓</span> Email: support@yourdomain.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Consultation Card -->
+            <div class="bg-indigo-50 p-6 rounded-xl shadow-md border border-indigo-100">
+                <h3 class="text-xl font-semibold text-slate-800 mb-4">Free Consultation</h3>
+                <p class="text-slate-700 mb-4">รับสิทธิ์ <span class="text-indigo-600 font-bold">ปรึกษาเบื้องต้นเพื่อประเมินความเป็นไปได้</span> ของโปรเจกต์ฟรี! ไม่เสียค่าใช้จ่าย</p>
+                <div class="space-y-2">
+                    <p class="text-sm text-slate-600 italic">"เราจะช่วยคุณวิเคราะห์ว่างานแบบไหนควรทำ Automation เพื่อให้ได้ผลลัพธ์ที่ <span class="font-bold">คุ้มค่าที่สุด</span> ในเวลาที่รวดเร็ว"</p>
+                </div>
+                <button class="mt-4 w-full bg-indigo-600 text-white font-bold py-3 rounded-lg hover:bg-indigo-700 transition duration-300">
+                    ส่งรายละเอียดงานของคุณ
+                </button>
+            </div>
+        </div>
+
+        <div class="bg-slate-900 p-8 rounded-xl text-center shadow-lg">
+            <p class="text-lg text-white leading-relaxed">
+                สรุปทิ้งท้าย: <span class="text-indigo-400 font-bold text-xl uppercase italic">การลงทุนในระบบอัตโนมัติคือการซื้อเวลาคืนให้ธุรกิจ</span> 
+                อย่าปล่อยให้ทรัพยากรที่มีค่าของคุณหมดไปกับงาน Routine ที่เครื่องจักรทำแทนได้ดีกว่า
+            </p>
+        </div>
+    </div>
+</section>
+
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-white text-2xl font-bold mb-8">วิธีจ้างเขียนโปรแกรม Automation ดึงข้อมูลเว็บและสคริปต์ Excel แบบงานไวให้คุ้มค่า</h2>
+            <div class="flex justify-center gap-8 mb-12">
+                <a href="https://line.me/ti/p/PORd6Fgzfw" class="hover:text-white transition-colors uppercase tracking-widest text-xs font-bold">line</a><a href="https://www.facebook.com/game.gkt/" class="hover:text-white transition-colors uppercase tracking-widest text-xs font-bold">facebook</a>
+            </div>
+            <div class="border-t border-slate-800 pt-8">
+                <p class="text-sm">&copy; 2026 All Rights Reserved. Created with ❤️ for SEO.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
