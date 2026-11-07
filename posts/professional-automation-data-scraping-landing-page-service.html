@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แนะนำแหล่งรับเขียนโปรแกรม Automation ดึงข้อมูล และทำ Landing Page งานไว ครบจบที่เดียว</title>
+    <meta name="description" content="กำลังมองหาแหล่งรับเขียนโปรแกรม Automation ดึงข้อมูล (Data Scraping) และรับทำ Landing Page คุณภาพสูงอยู่ใช่ไหม? เพิ่มยอดขายและลดเวลาทำงานด้วยบริการมืออาชีพที่รวดเร็วและเห็นผลจริง">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Kanit', sans-serif; background-color: #f8fafc; color: #1e293b; }
+        .hero-gradient { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); }
+        .glass-nav { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        h1, h2, h3, h4 { color: #0f172a; line-height: 1.3; }
+        p { line-height: 1.8; margin-bottom: 1.5rem; color: #334155; }
+        .cta-button { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .cta-button:hover { transform: translateY(-2px); box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.4); }
+        .prose a { color: #4f46e5; text-decoration: underline; font-weight: 600; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+    </style>
+</head>
+<body class="antialiased">
+    <nav class="sticky top-0 z-50 glass-nav border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
+            <a href="#" class="font-bold text-2xl bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-violet-600 truncate max-w-[200px] md:max-w-md">
+                แนะนำแหล่งรับเขียนโปรแกรม Automation ดึงข้อมูล และทำ Landing Page งานไว ครบจบที่เดียว
+            </a>
+            <div class="hidden lg:flex gap-8">
+                <a href="#home" class="text-sm font-semibold text-slate-600 hover:text-indigo-600 transition-colors uppercase tracking-widest">หน้าแรก</a><a href="#services" class="text-sm font-semibold text-slate-600 hover:text-indigo-600 transition-colors uppercase tracking-widest">เนื้อหา</a><a href="#knowledge" class="text-sm font-semibold text-slate-600 hover:text-indigo-600 transition-colors uppercase tracking-widest">ความรู้เพิ่มเติม</a><a href="#testimonials" class="text-sm font-semibold text-slate-600 hover:text-indigo-600 transition-colors uppercase tracking-widest">รีวิว</a><a href="#contact" class="text-sm font-semibold text-slate-600 hover:text-indigo-600 transition-colors uppercase tracking-widest">Contact</a>
+            </div>
+            <a href="https://fastwork.co/user/game.gkt" class="hidden md:block bg-indigo-600 text-white px-6 py-2.5 rounded-full text-sm font-bold cta-button">
+                จ้างงานบน Fastwork
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="py-16 scroll-mt-20 border-b border-slate-100 last:border-0">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <div class="mb-8">
+      <span class="bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-semibold uppercase tracking-wide">High-Speed Development</span>
+    </div>
+    <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
+      เปลี่ยนธุรกิจของคุณให้เป็น <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">อัตโนมัติ</span> พร้อม Landing Page ที่ปิดการขายได้จริง
+    </h1>
+    <p class="text-xl text-slate-600 mb-10 leading-relaxed">
+      เพิ่มประสิทธิภาพการทำงานด้วยระบบ <span class="bg-yellow-100">Automation</span> และบริการ <span class="bg-indigo-100">ดึงข้อมูล (Data Scraping)</span> ที่แม่นยำ พร้อมสร้างหน้าขายของที่เน้น <span class="font-bold text-slate-800 underline">Conversion Rate</span> สูงสุด
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="https://fastwork.co/user/game.gkt" target="_blank" class="bg-indigo-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-indigo-700 transition-all shadow-lg hover:shadow-indigo-200">จ้างงานบน Fastwork</a>
+      <a href="https://line.me/ti/p/PORd6Fgzfw" target="_blank" class="bg-green-500 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-600 transition-all shadow-lg hover:shadow-green-200">ติดต่อผ่าน Line</a>
+    </div>
+    <div class="mt-16">
+      <img src="https://image.pollinations.ai/prompt/Professional_modern_workplace_with_a_software_developer_interface%2C_featuring_data_analytics_charts%2C_web_automation_flow_diagrams%2C_and_a_sleek_high-conversion_landing_page_preview_on_multiple_4K_monitors._Clean_aesthetic%2C_glassmorphism_UI_elements%2C_blue_and_indigo_color_scheme%2C_8k_resolution%2C_high-quality_lighting.?width=1024&height=600&nologo=true" onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1024&q=80'" alt="แนะนำแหล่งรับเขียนโปรแกรม Automation ดึงข้อมูลและทำ Landing Page งานไว" class="w-full h-auto rounded-xl shadow-2xl mb-8" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="services" class="py-16 scroll-mt-20 border-b border-slate-100 last:border-0 bg-slate-50">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center">บริการที่ช่วยให้ธุรกิจคุณก้าวกระโดด</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+      <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+          <span class="text-2xl">🤖</span>
+        </div>
+        <h3 class="text-xl font-bold mb-4">Web Automation</h3>
+        <p class="text-slate-600">ลดงานซ้ำซ้อนด้วยโปรแกรมอัตโนมัติ ไม่ว่าจะเป็นการกรอกข้อมูล การส่งข้อความ หรือการจัดการระบบหลังบ้าน</p>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+          <span class="text-2xl">📊</span>
+        </div>
+        <h3 class="text-xl font-bold mb-4">Data Scraping</h3>
+        <p class="text-slate-600">ดึงข้อมูลคู่แข่ง ข้อมูลสินค้า หรือรายชื่อลูกค้าจากเว็บไซต์ต่างๆ มาวิเคราะห์ต่อยอดธุรกิจอย่างรวดเร็ว</p>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+          <span class="text-2xl">🚀</span>
+        </div>
+        <h3 class="text-xl font-bold mb-4">Landing Page</h3>
+        <p class="text-slate-600">ออกแบบและพัฒนาหน้าขายของ (Sale Page) ที่เน้นความสวยงาม ความเร็ว และการปิดการขายที่ดีเยี่ยม</p>
+      </div>
+    </div>
+    <div class="bg-indigo-900 text-white p-10 rounded-3xl">
+      <h4 class="text-2xl font-bold mb-4">ทำไมต้องเลือกจ้างงานกับเรา?</h4>
+      <ul class="space-y-4">
+        <li class="flex items-start">
+          <span class="mr-3 text-green-400">✓</span>
+          <p>ส่งงานตรงเวลา งานไว ทันต่อการใช้งานในยุคดิจิทัล</p>
+        </li>
+        <li class="flex items-start">
+          <span class="mr-3 text-green-400">✓</span>
+          <p>เขียนโปรแกรมด้วยภาษาที่ทันสมัย รองรับการสเกลธุรกิจ</p>
+        </li>
+        <li class="flex items-start">
+          <span class="mr-3 text-green-400">✓</span>
+          <p>ให้คำปรึกษาและออกแบบระบบโดย <a href="https://fastwork.co/user/game.gkt" target="_blank" class="text-indigo-300 hover:text-white font-bold underline">ผู้เชี่ยวชาญด้าน Conversion Rate</a></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="knowledge" class="py-16 scroll-mt-20 border-b border-slate-100 last:border-0">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-slate-900 mb-8">ความสำคัญของ Automation และ Data ในปี 2024</h2>
+    <div class="prose prose-slate max-w-none text-slate-600 leading-relaxed">
+      <p class="mb-6">
+        ในยุคที่ข้อมูลมีค่ามากกว่าทอง การเข้าถึงข้อมูลที่รวดเร็วคือความได้เปรียบทางธุรกิจอย่างมหาศาล การใช้บริการ <a href="https://fastwork.co/user/game.gkt" target="_blank" class="text-indigo-600 font-semibold">รับเขียนโปรแกรม Automation ดึงข้อมูล</a> จะช่วยให้คุณไม่พลาดความเคลื่อนไหวของตลาด ไม่ต้องเสียเวลามานั่ง Copy-Paste ข้อมูลด้วยตัวเองนานเป็นวันๆ อีกต่อไป
+      </p>
+      <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 mb-8">
+        <h3 class="text-xl font-bold text-slate-900 mb-4">ประโยชน์ของ Data Scraping</h3>
+        <ul class="list-none space-y-3">
+          <li class="flex items-center"><span class="text-indigo-500 mr-2">⚡</span> ตรวจสอบราคาสินค้าคู่แข่งแบบ Real-time</li>
+          <li class="flex items-center"><span class="text-indigo-500 mr-2">⚡</span> รวบรวมรีวิวสินค้าเพื่อนำมาวิเคราะห์ความต้องการลูกค้า</li>
+          <li class="flex items-center"><span class="text-indigo-500 mr-2">⚡</span> ดึงข้อมูล Leads สำหรับการทำ Digital Marketing</li>
+        </ul>
+      </div>
+      <p class="mb-6">
+        นอกจากการมีข้อมูลแล้ว การมีหน้าร้านออนไลน์ที่ทรงพลังก็สำคัญไม่แพ้กัน หากคุณต้องการสร้างยอดขายแบบอัตโนมัติ การ <a href="https://fastwork.co/user/game.gkt" target="_blank" class="text-indigo-600 font-semibold">ออกแบบ Sale Page ปิดการขาย</a> ที่ผ่านกระบวนการคิดแบบ UX/UI มาอย่างดี จะช่วยเปลี่ยนคนดูให้กลายเป็นลูกค้าได้ทันที
+      </p>
+      <p class="mb-6">
+        หลายคนถามว่าทำไมต้อง <a href="https://fastwork.co/user/game.gkt" target="_blank" class="text-indigo-600 font-semibold">จ้างทำระบบ Automate ธุรกิจ</a> คำตอบง่ายๆ คือ เพื่อลด Error ที่เกิดจากคน (Human Error) และเพิ่มความแม่นยำในการทำงานให้ได้ 100% ซึ่งส่งผลโดยตรงต่อภาพลักษณ์และความน่าเชื่อถือของแบรนด์
+      </p>
+      <div class="bg-blue-50 border-l-4 border-blue-500 p-6 my-8 italic">
+        "การทำธุรกิจในปัจจุบันไม่ใช่แค่ใครเก่งกว่า แต่คือใครที่เข้าถึงข้อมูลและเปลี่ยนเป็นระบบอัตโนมัติได้เร็วกว่า"
+      </div>
+      <p>
+        หากคุณกำลังมองหาทางลัดสู่ความสำเร็จ เราขอแนะนำให้ลองใช้บริการ <a href="https://fastwork.co/user/game.gkt" target="_blank" class="text-indigo-600 font-semibold">รับทำ Landing Page คุณภาพสูง</a> ที่รวมเอาการเขียนโปรแกรมหลังบ้านและการตลาดเข้าด้วยกัน ซึ่งจะช่วยให้คุณประหยัดทั้งเวลาและงบประมาณในระยะยาว
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" class="py-16 scroll-mt-20 border-b border-slate-100 last:border-0 bg-slate-50">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center">ความประทับใจจากลูกค้าจริง</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+        <div class="flex mb-4">
+          <span class="text-yellow-400">★★★★★</span>
+        </div>
+        <p class="text-slate-600 italic mb-6">"จ้างทำระบบดึงข้อมูลสินค้าจากหลายเว็บมาเปรียบเทียบราคา งานไวมาก โปรแกรมเสถียรและใช้งานง่ายสุดๆ ช่วยประหยัดเวลาผมไปได้เยอะเลยครับ"</p>
+        <p class="font-bold text-slate-900">- คุณธนพล, เจ้าของธุรกิจ E-commerce</p>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+        <div class="flex mb-4">
+          <span class="text-yellow-400">★★★★★</span>
+        </div>
+        <p class="text-slate-600 italic mb-6">"Landing Page ที่ทางทีมงานออกแบบให้ยอด Conversion พุ่งขึ้นอย่างเห็นได้ชัด งานไว คุยง่าย เข้าใจความต้องการของนักการตลาดจริงๆ"</p>
+        <p class="font-bold text-slate-900">- คุณรินดา, Marketing Director</p>
+      </div>
+    </div>
+    <div class="mt-12 text-center">
+      <p class="text-slate-500 mb-6 font-medium">ร่วมเป็นหนึ่งในลูกค้าที่ประสบความสำเร็จกับเรา</p>
+      <a href="https://fastwork.co/user/game.gkt" target="_blank" class="inline-flex items-center text-indigo-600 font-bold hover:underline">
+        ดูรีวิวเพิ่มเติมบน Fastwork <span class="ml-2">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="py-16 scroll-mt-20 border-b border-slate-100 last:border-0 bg-indigo-600">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-4xl font-bold text-white mb-6">เริ่มโปรเจกต์ของคุณวันนี้!</h2>
+    <p class="text-indigo-100 mb-10 text-lg">
+      ไม่ว่าจะเป็นการดึงข้อมูลที่ซับซ้อน หรือการทำระบบอัตโนมัติ เราพร้อมเป็นพาร์ทเนอร์ด้านเทคโนโลยีให้คุณ
+    </p>
+    <div class="bg-white p-10 rounded-3xl shadow-2xl">
+      <p class="text-slate-800 text-xl font-bold mb-8">ติดต่อจ้างงานได้ผ่านช่องทางด้านล่าง</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="https://fastwork.co/user/game.gkt" target="_blank" class="flex items-center justify-center bg-slate-900 text-white px-6 py-4 rounded-xl font-bold hover:bg-slate-800 transition-colors">
+          <span class="mr-2">🚀</span> Fastwork : จ้างงานที่นี่
+        </a>
+        <a href="https://line.me/ti/p/PORd6Fgzfw" target="_blank" class="flex items-center justify-center bg-green-500 text-white px-6 py-4 rounded-xl font-bold hover:bg-green-600 transition-colors">
+          <span class="mr-2">💬</span> LINE : ติดต่อจ้างงาน
+        </a>
+      </div>
+      <div class="mt-6">
+        <a href="https://www.facebook.com/game.gkt/" target="_blank" class="text-slate-600 hover:text-indigo-600 font-medium">
+          FACEBOOK : ติดตามผลงาน
+        </a>
+      </div>
+      <div class="mt-8 pt-8 border-t border-slate-100 text-slate-500 text-sm">
+        รับประกันคุณภาพงานด้วยประสบการณ์ตรงจาก <a href="https://fastwork.co/user/game.gkt" target="_blank" class="text-indigo-600 underline">บริการเขียนโปรแกรมจัดการข้อมูล</a> และ <a href="https://fastwork.co/user/game.gkt" target="_blank" class="text-indigo-600 underline">รับดึงข้อมูลเว็บไซต์ (Data Scraping)</a> ระดับมืออาชีพ
+      </div>
+    </div>
+  </div>
+</section>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-white text-2xl font-bold mb-8">แนะนำแหล่งรับเขียนโปรแกรม Automation ดึงข้อมูล และทำ Landing Page งานไว ครบจบที่เดียว</h2>
+            <div class="flex justify-center gap-8 mb-12">
+                <a href="https://line.me/ti/p/PORd6Fgzfw" class="hover:text-white transition-colors uppercase tracking-widest text-xs font-bold">line</a><a href="https://www.facebook.com/game.gkt/" class="hover:text-white transition-colors uppercase tracking-widest text-xs font-bold">facebook</a>
+            </div>
+            <div class="border-t border-slate-800 pt-8">
+                <p class="text-sm">&copy; 2026 All Rights Reserved. Created with ❤️ for SEO.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
